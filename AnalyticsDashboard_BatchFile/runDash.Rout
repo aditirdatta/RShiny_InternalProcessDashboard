@@ -1,0 +1,207 @@
+
+R version 3.2.5 (2016-04-14) -- "Very, Very Secure Dishes"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> ## this code allows to run shiny app in a batch mode
+> # use callR.bat to execute runDash.R in R (make sure R installation path is correct)
+> # use runDash.R to execute the shiny commands and load shiny library
+> # use run.bat to call the Shiny app in minimized mode
+> 
+> require(shiny)
+Loading required package: shiny
+> 
+> ## make sure your application path is correct, u can also use relative path
+> folder_address = 'U://ads//Rscripts'
+> runApp(folder_address, launch.browser=TRUE, host = "0.0.0.0", port = 6325)
+Loading required package: rJava
+Loading required package: shinydashboard
+
+Attaching package: 'shinydashboard'
+
+The following object is masked from 'package:graphics':
+
+    box
+
+Loading required package: plyr
+Loading required package: dplyr
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:plyr':
+
+    arrange, count, desc, failwith, id, mutate, rename, summarise,
+    summarize
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Loading required package: ggplot2
+Loading required package: XLConnect
+Loading required package: XLConnectJars
+XLConnect 0.2-12 by Mirai Solutions GmbH [aut],
+  Martin Studer [cre],
+  The Apache Software Foundation [ctb, cph] (Apache POI, Apache Commons
+    Codec),
+  Stephen Colebourne [ctb, cph] (Joda-Time Java library),
+  Graph Builder [ctb, cph] (Curvesapi Java library)
+http://www.mirai-solutions.com ,
+http://miraisolutions.wordpress.com
+Loading required package: readxl
+Loading required package: xlsx
+Loading required package: xlsxjars
+
+Attaching package: 'xlsx'
+
+The following objects are masked from 'package:XLConnect':
+
+    createFreezePane, createSheet, createSplitPane, getCellStyle,
+    getSheets, loadWorkbook, removeSheet, saveWorkbook, setCellStyle,
+    setColumnWidth, setRowHeight
+
+Loading required package: png
+Loading required package: leaflet
+Loading required package: htmlwidgets
+Loading required package: htmltools
+Loading required package: DT
+
+Attaching package: 'DT'
+
+The following objects are masked from 'package:shiny':
+
+    dataTableOutput, renderDataTable
+
+Loading required package: rpivotTable
+Loading required package: knitr
+Loading required package: plotrix
+Loading required package: plotly
+
+Attaching package: 'plotly'
+
+The following object is masked from 'package:ggplot2':
+
+    last_plot
+
+The following object is masked from 'package:graphics':
+
+    layout
+
+Loading required package: dygraphs
+Loading required package: formattable
+
+Attaching package: 'formattable'
+
+The following object is masked from 'package:plotly':
+
+    style
+
+Loading required package: data.table
+------------------------------------------------------------------------------
+data.table + dplyr code now lives in dtplyr.
+Please library(dtplyr)!
+------------------------------------------------------------------------------
+
+Attaching package: 'data.table'
+
+The following objects are masked from 'package:dplyr':
+
+    between, last
+
+Loading required package: rAmCharts
+
+rAmCharts is still in developement
+See profile 'datastorm-open' on GitHub for the latest version
+or run directly devtools::install_github('datastorm-open/rAmCharts')
+
+Attaching package: 'rAmCharts'
+
+The following objects are masked from 'package:graphics':
+
+    legend, title
+
+Loading required package: RColorBrewer
+Loading required package: devtools
+Loading required package: Quandl
+Loading required package: xts
+Loading required package: zoo
+
+Attaching package: 'zoo'
+
+The following objects are masked from 'package:base':
+
+    as.Date, as.Date.numeric
+
+
+Attaching package: 'xts'
+
+The following object is masked from 'package:data.table':
+
+    last
+
+The following objects are masked from 'package:dplyr':
+
+    first, last
+
+Loading required package: portfolio
+Loading required package: grid
+Loading required package: lattice
+Loading required package: nlme
+
+Attaching package: 'nlme'
+
+The following object is masked from 'package:dplyr':
+
+    collapse
+
+
+Attaching package: 'portfolio'
+
+The following object is masked from 'package:devtools':
+
+    create
+
+Loading required package: treemap
+Loading required package: googleVis
+Creating a generic function for 'toJSON' from package 'jsonlite' in package 'googleVis'
+
+Welcome to googleVis version 0.6.0
+
+Please read the Google API Terms of Use
+before you start using the package:
+https://developers.google.com/terms/
+
+Note, the plot method of googleVis will by default use
+the standard browser to display its output.
+
+See the googleVis package vignettes for more details,
+or visit http://github.com/mages/googleVis.
+
+To suppress this message use:
+suppressPackageStartupMessages(library(googleVis))
+
+
+Listening on http://0.0.0.0:6325
+Warning in list(X85..Active.Projects = c("*", "Yes", "   ", "   ", "   ",  :
+  longer object length is not a multiple of shorter object length
+ERROR: [on_request_read] connection reset by peer
+ERROR: [on_request_read] connection reset by peer
+ERROR: [on_request_read] connection reset by peer

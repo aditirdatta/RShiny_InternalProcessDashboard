@@ -1,0 +1,5 @@
+1. Rename run.batx to run.bat and callR.batx to callR.bat
+2. If you have only C: drive in server, create partition for another drive
+3. Install R in partitioned drive in system (for fully tested version - follow link:https://cran.r-project.org/bin/windows/base/old/3.2.5/)
+4. Ensure updated version of JAVA installed in your system. (if a 64-bit server, download 640bit offline mode and update; follow link: https://java.com/en/download/manual.jsp)
+5. Confirm path is correct in batch files
